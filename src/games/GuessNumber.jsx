@@ -64,7 +64,6 @@ function GuessNumber() {
           justify-content: center;
           color: #fff; 
           text-align: center; 
-          padding: 24px;
           background: linear-gradient(-45deg, #6a11cb, #2575fc, #ff6f61, #845ec2);
           background-size: 400% 400%;
           animation: gradientShift 18s ease infinite;
@@ -108,7 +107,17 @@ function GuessNumber() {
         }
       `}</style>
 
-      <div>
+      <div className="game-container">
+        <style>{`
+          .game-container {
+            width: 100%;
+            max-width: 450px;
+            background: rgba(255,255,255,0.12);
+            backdrop-filter: blur(10px);
+            border-radius: 18px;
+            padding: 24px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+            position: relative;`}</style>
         <h3>🔢 Відгадай число</h3>
         <p className="message">{message}</p>
 
