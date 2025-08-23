@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const styles = `
+const styles = /*css*/`
   * { box-sizing: border-box; }
   html, body, #root { height: 100%; margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
 
