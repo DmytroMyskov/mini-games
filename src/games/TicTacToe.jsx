@@ -72,10 +72,10 @@ const styles = `
 
 export default function TicTacToe() {
   const [cells, setCells] = useState(Array(9).fill(""));
-  const [cur, setCur] = useState("❌"); // Игрок всегда ❌
+  const [cur, setCur] = useState("❌");
   const [over, setOver] = useState(false);
   const [status, setStatus] = useState("Хід: ❌");
-  const [winnerLine, setWinnerLine] = useState(null); // Индексы победной линии
+  const [winnerLine, setWinnerLine] = useState(null);
   const [score, setScore] = useState({ player: 0, computer: 0 });
 
   const wins = [
